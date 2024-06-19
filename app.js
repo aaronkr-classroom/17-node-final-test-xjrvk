@@ -180,8 +180,8 @@ router.put(
 ); // 편집 폼에서 받아온 데이터의 처리와 결과를 사용자 보기 페이지에 보여주기
 router.delete(
   "/users/:id/delete",
-  usersController.delete,
-  usersController.redirectView
+  DiscussionsController.delete,
+  DiscussionsController.redirectView
 );
 
 /**
