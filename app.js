@@ -163,8 +163,8 @@ router.get(
 /**
  * Users
  */
-router.get("/users", usersController.index, usersController.indexView); // index 라우트 생성
-router.get("/users/new", usersController.new); // 생성 폼을 보기 위한 요청 처리
+router.get("/users", DiscussionsController.index, DiscussionsController.indexView); // index 라우트 생성
+router.get("/users/new", DiscussionsController.new); // 생성 폼을 보기 위한 요청 처리
 router.post(
   "/users/create",
   usersController.validate, // strips . from email
